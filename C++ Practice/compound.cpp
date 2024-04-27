@@ -6,8 +6,7 @@ using namespace std;
 
 int main()
 {
-    int p, n, r;
-    float a, i, x;
+    double p, n, r, a, i, x;
     cout << "What is your principle ammount: ";
     cin >> p;
     cout << "Waht is the rate of interest: ";
@@ -16,7 +15,7 @@ int main()
     cin >> n;
 
     x = r / 100;
-    a = p * pow((1 + x), n);
+    a = p * (pow((1 + x), n));
     i = a - p;
     cout << "Your interest amount is: " << i << endl;
 
