@@ -5,6 +5,8 @@ using namespace std;
 
 void swap(int n1, int n2)
 {
+    cout << "Before swapping the first number is : " << n1 << " and second number is : " << n2 << endl;
+
     n1 = n1 - n2;
     n2 = n1 + n2;
     n1 = n2 - n1;
@@ -19,7 +21,6 @@ int main()
     cout << "Enter the second number : ";
     cin >> n2;
 
-    cout << "Before swapping the first number is : " << n1 << " and second number is : " << n2 << endl;
     swap(n1, n2);
 
     return 0;

@@ -6,31 +6,63 @@ using namespace std;
 // Function for reversing
 void reverse(string str)
 {
-    for (int i = str.length(); i >= 0; i--)
+    char rev[3];
+    int flag = 0;
+    int len = str.length();
+    for (int i = len, j = 0; i >= 0, j <= len; i--, j++)
     {
-        cout << str[i];
+        if (rev[j] != str[i])
+        {
+            // cout << "hi i am inside codition";da
+            flag = 1;
+        }
+    }
+
+    // cout << rev[j];
+
+    if (flag == 0)
+    {
+        cout << str << " is palindrome";
+    }
+    else
+    {
+        cout << str << " is not palindrome";
     }
 }
+// cout << "rev" << rev << endl;
+// if (str == rev)
+// {
+//     cout << "The number / string is a palindrome." << endl;
+// }
+// else
+// {
+//     cout << "The number / string is not a palindrome." << endl;
+// }
 
 int main()
 {
     string str;
     cout << "Enetr the number or string: ";
     cin >> str;
-    string temp = str;
+    // string temp = str;
 
-    cout << "After reversing new number / string is: ";
-    reverse(temp);
+    // cout << "After reversing new number / string is: ";
+    reverse(str);
     cout << endl;
 
-    if (str == temp)
-    {
-        cout << "The number / string is a palindrome." << endl;
-    }
-    else
-    {
-        cout << "The number / string is not a palindrome." << endl;
-    }
+    // if (str == temp)
+    // {
+    //     cout << "The number / string is a palindrome."  << endl;
+    // }
+    // else
+    // {
+    //     cout << "The number / string is not a palindrome." << endl;
+    // }
 
     return 0;
 }
+// 0 1 2
+// k o u
+
+// 2 1 0
+// u o k

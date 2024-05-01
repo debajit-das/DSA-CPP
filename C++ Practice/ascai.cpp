@@ -10,7 +10,8 @@ int main()
     cin >> charInput;
     int asciiOutput = charInput;
 
-    cout << "ASCII value of your input is :" << asciiOutput;
+    cout << "ASCII value of your input is :" << asciiOutput << endl;
+    system("pause");
 
     return 0;
 }
