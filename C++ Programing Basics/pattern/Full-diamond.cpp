@@ -1,5 +1,27 @@
 #include <iostream>
 using namespace std;
+
+//  Full pyramid
+
+void fullPyramid(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j < n; j++)
+        {
+            cout << " ";
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+}
+
+// Inverted full pyramid
+
 void invertedFullPyramid(int n)
 {
     for (int row = 0; row <= n - 1; row++)
@@ -17,31 +39,19 @@ void invertedFullPyramid(int n)
         cout << endl;
     }
 }
+
+void diamond(int n)
+{
+    fullPyramid(n);
+    invertedFullPyramid(n);
+}
+
 int main()
 {
-    // int row, i, j, k;
-    // cout << "Enter the number of row: ";
-    // cin >> row;
-
-    // for (i = 1; i <= row; i++)
-    // {
-
-    //     for (int k = 1; k < i; k++)
-    //     {
-    //         cout << " ";
-    //     }
-    //     for (int j = i; j <= row; j++)
-    //     {
-    //         cout << "* ";
-    //     }
-
-    //     cout << endl;
-    // }
-
     int n;
     cout << "Enter the number of rows: ";
     cin >> n;
-    invertedFullPyramid(n);
+    diamond(n);
 
     return 0;
 }
