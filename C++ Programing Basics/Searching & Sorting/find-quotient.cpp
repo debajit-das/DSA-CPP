@@ -46,6 +46,34 @@ int main()
     {
         ans = 0 - ans;
     }
+    // long long int dividendx = abs(dividend);
+    // long long int divisorx = abs(divisor);
+    // cout << dividendx << endl;
+    // cout << divisorx << endl;
+
+    // long long int s = 0;
+    // long long int e = dividendx;
+    // long long int ans = 0;
+    // cout << "s : " << s << endl;
+    // cout << "e: " << e << endl;
+    // while (s <= e)
+    // {
+    //     long long int mid = s + ((e - s) >> 1);
+    //     cout << "mid : " << mid << endl;
+    //     cout << "s : " << s << endl;
+    //     cout << "e : " << e << endl;
+
+    //     if (mid * divisorx <= dividendx)
+    //     {
+    //         ans = mid;
+    //         s = mid + 1;
+    //         cout << "mid: " << mid << endl;
+    //     }
+    //     else
+    //     {
+    //         e = mid - 1;
+    //     }
+    // }
     cout << "Quotient is : " << ans;
 
     return 0;
