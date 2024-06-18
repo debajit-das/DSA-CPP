@@ -16,6 +16,7 @@ int main()
     cout << "*arr + 1 : " << *arr + 1 << endl;
     cout << "*(arr + 1) : " << *(arr + 1) << endl;
     cout << "*(arr + 3) : " << *(arr + 3) << endl;
+    cout << "size of pointer : " << sizeof(p) << endl;
 
     // Pointer with char arrays
     char ch[100] = "Debajit";
